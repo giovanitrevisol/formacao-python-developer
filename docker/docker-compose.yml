@@ -1,0 +1,16 @@
+version: '3'
+
+services:
+  mongo:
+    container_name: mongo-pymongo
+    image: mongo
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: root
+      MONGO_INITDB_ROOT_PASSWORD: giovani!
+    ports:
+      - "27017:27017"
+#    volumes:
+#      - xxx:/data/db
+
+
+#mongodb://root:giovani!@localhost:27017
