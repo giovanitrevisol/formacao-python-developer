@@ -27,7 +27,7 @@ def task(id):
         try:
             task = list_tasks[id]
             new_status = json.loads(request.data)
-            task['status'] = new_status
+            task['status'] = new_status["status"]
             response = {'status': 'Success', 'message': 'task is updated with success!'}
         except IndexError:
             response = {'status': 'error', 'message': 'task not found!'}
