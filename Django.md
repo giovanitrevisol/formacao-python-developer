@@ -7,10 +7,21 @@ Django is a high-level Python web Framework that enables rapid development of se
 **MTV - Model Template View**
 
 ## Create a project
-In terminal
-```commandline
-python manage.py starapp <name-of-application>
-```
-Then folder will be created with project name that contains files:
-> __init__.py -> This file determinate that folder is python package  
-> settings.py -> File os configuration project
+1 - create and active a virtual env
+
+> python3 -m venv name_virtual_environment
+> source name_virtual_environment/bin/activate
+
+ 2 - install Django
+ > pip3 install django
+
+ 3 - create a project Django
+ > django-admin startproject project_name
+
+4 - open folder project_name
+> cd project_name
+
+5 - create application
+> django-admin startapp core
+
+OBS: A Djando project can have more than one application
